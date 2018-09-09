@@ -8400,7 +8400,8 @@ body {
 
 /* 用户注册 */
 
-.register-page img.captcha {
+.register-page img.captcha,
+.login-page img.captcha {
   margin-bottom: 0px;
   margin-top: 10px;
   cursor: pointer;

@@ -68,7 +68,7 @@
                                 <input type="text" id="captcha" class="form-control" name="captcha">
 
                                 <img src="{{ captcha_src('flat') }}" onclick="this.src='/captcha/flat?'+Math.random()" title="点击图片重新获取验证码" class="thumbnail captcha">
-                                
+                                    
                                 @if ($errors->has('captcha'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('captcha') }}</strong>
