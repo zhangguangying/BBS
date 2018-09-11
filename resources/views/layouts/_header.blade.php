@@ -32,7 +32,7 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="user-avatar pull-left" style="margin-right: 8px;margin-top: -5px;">
-                            <img src="https://fsdhubcdn.phphub.org/uploads/images/201709/20/1/PtDKbASVcz.png?imageView2/1/w/60/h/60" alt="" width="30px" height="30px" class="img-responsive img-circle">
+                            <img src="{{ Auth::user()->avatar }}" alt="" width="30px" height="30px" class="img-responsive img-circle">
                         </span>
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
