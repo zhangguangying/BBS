@@ -8407,3 +8407,9 @@ body {
   cursor: pointer;
 }
 
+/* 用户详情页 */
+
+.user-show-page .user-info .thumnail {
+  margin-bottom: 0;
+}
+
