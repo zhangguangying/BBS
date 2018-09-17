@@ -41,15 +41,23 @@
                     {!! $topic->body !!}
                 </div>
 
+                @can('destroy', $topic)
                 <div class="operate">
                     <hr>
-                    <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-default-btn-xs">
+                    <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-default btn-xs pull-left">
                         <i class="glyphicon glyphicon-edit"></i> 编辑
                     </a>
-                    <a href="#" class="btn btn-default btn-xs">
-                        <i class="glyphicon glyphicon-trash"></i> 删除
-                    </a>
+                    <form action="{{ route('topics.destroy', $topic->id) }}" method="POST">
+                        {{ csrf_field() }}
+                        {{ method_field('delete') }}
+
+                        <button class="btn btn-default btn-xs pull-left" type="submit" style="margin-left: 6px;">
+                            <i class="glyphicon glyphicon-trash"></i> 删除
+                        </button>
+                    </form>
+                    
                 </div>
+                @endcan
             </div>
         </div>
     </div>
