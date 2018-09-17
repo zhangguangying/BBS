@@ -30,7 +30,7 @@ class SlugTranslateHandler
             'salt' => $salt,
             'sign' => $sign,
         ]);
-
+        
         $response = $http->get($api . $query);
 
         $result = json_decode($response->getBody(), true);
