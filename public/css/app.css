@@ -8982,3 +8982,17 @@ body {
   color: #b3b3b3;
 }
 
+/* 通知页 */
+
+.notifications-badge {
+  margin-top: -1;
+}
+
+.notifications-badge .badge-fade {
+  background-color: #ebe8e8;
+}
+
+.notifications-badge .badge-hint {
+  background-color: #d15b47 !important;
+}
+
