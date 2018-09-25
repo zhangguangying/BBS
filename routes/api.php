@@ -19,6 +19,9 @@ $api->version('v1', function($api) {
     $api->get('version', function() {
         return response('this is version v1');
     });
+
+    $api->post('socials/{social_type}/authorizations', 'AuthorizationsController@socialStore')
+        ->name('api.socials.authorizations.store');
 });
 
 $api->version('v2', function($api) {
@@ -26,4 +29,6 @@ $api->version('v2', function($api) {
         return response('this is version v2');
     });
 });
+
+
 
